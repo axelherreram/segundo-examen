@@ -21,6 +21,8 @@ async function obtenerDatos() {
             <p class="text-lg"><strong>Alfabetismo:</strong> ${jsonData.alfabetismo}%</p>
             <p class="text-lg"><strong>Promedio de Hijos por Mujer:</strong> ${jsonData.prom_hijos_mujer}</p>
             <p class="text-lg"><strong>Promedio de Personas por Hogar:</strong> ${jsonData.prom_personas_hogar}</p>
+            <p class="text-lg"><strong>Total hombres:</strong> ${jsonData.total_sexo_hombre} </p>
+            <p class="text-lg"><strong>Total mujeres:</strong> ${jsonData.total_sexo_mujeres} </p>
         `;
 
         // Actualizar los gráficos
@@ -86,7 +88,7 @@ function actualizarGraficos(data) {
                 },
                 x: {
                     ticks: {
-                        color: 'black'  // Cambia el color del texto en el eje X a negro
+                        color: 'black'  
                     }
                 }
             },
