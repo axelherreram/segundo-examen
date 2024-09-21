@@ -14,16 +14,17 @@ async function obtenerDatos() {
 
         // Mostrar los datos en el HTML
         document.getElementById('resultados').innerHTML = `
-            <h2 class="text-3xl text-black font-bold mb-4">${jsonData.nombre}</h2>
-            <p class="text-lg"><strong>Población Total:</strong> ${jsonData.pob_total.toLocaleString()} habitantes</p>
-            <p class="text-lg"><strong>Extensión Territorial:</strong> ${jsonData.ext_territorial} km²</p>
-            <p class="text-lg"><strong>Índice de Masculinidad:</strong> ${jsonData.indice_masculinidad}</p>
-            <p class="text-lg"><strong>Alfabetismo:</strong> ${jsonData.alfabetismo}%</p>
-            <p class="text-lg"><strong>Promedio de Hijos por Mujer:</strong> ${jsonData.prom_hijos_mujer}</p>
-            <p class="text-lg"><strong>Promedio de Personas por Hogar:</strong> ${jsonData.prom_personas_hogar}</p>
-            <p class="text-lg"><strong>Total hombres:</strong> ${jsonData.total_sexo_hombre} </p>
-            <p class="text-lg"><strong>Total mujeres:</strong> ${jsonData.total_sexo_mujeres} </p>
-        `;
+        <h2 class="text-xl md:text-3xl text-black font-bold mb-4">${jsonData.nombre}</h2>
+        <p class="text-sm md:text-lg"><strong>Población Total:</strong> ${jsonData.pob_total.toLocaleString()} habitantes</p>
+        <p class="text-sm md:text-lg"><strong>Extensión Territorial:</strong> ${jsonData.ext_territorial} km²</p>
+        <p class="text-sm md:text-lg"><strong>Índice de Masculinidad:</strong> ${jsonData.indice_masculinidad}</p>
+        <p class="text-sm md:text-lg"><strong>Alfabetismo:</strong> ${jsonData.alfabetismo}%</p>
+        <p class="text-sm md:text-lg"><strong>Promedio de Hijos por Mujer:</strong> ${jsonData.prom_hijos_mujer}</p>
+        <p class="text-sm md:text-lg"><strong>Promedio de Personas por Hogar:</strong> ${jsonData.prom_personas_hogar}</p>
+        <p class="text-sm md:text-lg"><strong>Total hombres:</strong> ${jsonData.total_sexo_hombre}</p>
+        <p class="text-sm md:text-lg"><strong>Total mujeres:</strong> ${jsonData.total_sexo_mujeres}</p>
+    `;
+    
 
         // Actualizar los gráficos
         actualizarGraficos(jsonData);
