@@ -10,17 +10,17 @@
 </head>
 
 <body
-    class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 min-h-screen flex flex-col items-center text-gray-100">
+    class="from-indigo-500 via-purple-500 to-pink-500 min-h-screen flex flex-col items-center ">
 
     <div class="container mx-auto p-6">
         <!-- Título principal -->
-        <h1 class="text-4xl font-extrabold text-center mb-8 text-white drop-shadow-lg">
+        <h1 class="text-4xl font-extrabold text-center mb-8 drop-shadow-lg">
             Datos del Censo de Población: El progreso
         </h1>
 
         <!-- Selección del municipio -->
         <form class="mb-8">
-            <label for="municipios" class="block mb-2 text-lg text-white font-semibold text-center">Selecciona un
+            <label for="municipios" class="block mb-2 text-lg  font-semibold text-center">Selecciona un
                 Municipio:</label>
             <select name="municipios" id="municipios"
                 class="block w-full max-w-sm mx-auto p-3 border border-gray-300 bg-gray-100 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
@@ -40,20 +40,20 @@
 
         <!-- Tarjeta de resultados -->
         <div id="resultados"
-            class="bg-white shadow-lg rounded-lg p-6 text-gray-800 transition-all transform hover:scale-105 hover:shadow-2xl">
+            class="bg-white shadow-lg rounded-lg p-6 text-gray-800 transition-all ">
             <!-- Los resultados se mostrarán aquí -->
         </div>
 
         <!-- Gráficos -->
         <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10">
             <!-- Gráfico de distribución por sexo -->
-            <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-2xl">
+            <div class="bg-white p-6 rounded-lg shadow-lg  ">
                 <h2 class="text-2xl font-bold text-center mb-4">Distribución por Sexo</h2>
                 <canvas id="sexoChart"></canvas>
             </div>
 
             <!-- Gráfico de distribución por edad -->
-            <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-2xl">
+            <div class="bg-white p-6 rounded-lg shadow-lg  ">
                 <h2 class="text-2xl font-bold text-center mb-4">Distribución por Edad</h2>
                 <canvas id="edadChart"></canvas>
             </div>
